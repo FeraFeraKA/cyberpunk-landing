@@ -45,13 +45,15 @@ body {
 
 .header_banner {
   position: absolute;
+  width: 100vw;
   inset: 0;
+  aspect-ratio: 9 / 20;
 }
 
 .platforms_yellow {
   position: relative;
   overflow: hidden;
-  margin-top: 451px;
+  margin-top: calc(2.25 * 100vw - 250px);
   padding: 30px 0;
   height: 206px;
   background-color: var(--main-black);
@@ -84,6 +86,7 @@ body {
   display: block;
   text-align: center;
   font-weight: 600;
+  font-size: 20px;
   background-color: var(--main-black);
   color: var(--main-yellow);
   text-decoration: none;
