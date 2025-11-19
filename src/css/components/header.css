@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Archangelsk";
+  src: url("../fonts/Archangelsk.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.header_nav {
+  position: relative;
+  margin: 0 12px;
+  z-index: 2;
+}
+
+.header_nav > a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 20px auto 10px;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_links a {
+  height: 25px;
+  width: 25px;
+}
+
+.header_banner {
+  position: absolute;
+  inset: 0;
+}
+
+.platforms_yellow {
+  position: relative;
+  overflow: hidden;
+  margin-top: 451px;
+  padding: 30px 0;
+  height: 206px;
+  background-color: var(--main-black);
+  z-index: 1;
+  border-top: 1px solid var(--main-black);
+  border-bottom: 1px solid var(--main-black);
+  clip-path: polygon(0% 24%, 15% 0%, 100% 0%, 100% 76%, 85% 100%, 0% 100%);
+}
+
+.platforms_yellow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--main-yellow);
+  clip-path: polygon(0% 24%, 15% 0%, 100% 0%, 100% 76%, 85% 100%, 0% 100%);
+  transform: scale(0.99);
+  z-index: -1;
+}
+
+.platforms_yellow p {
+  display: block;
+  text-align: center;
+  font-family: "Archangelsk", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0 13px;
+}
+
+.platforms_yellow a {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  background-color: var(--main-black);
+  color: var(--main-yellow);
+  text-decoration: none;
+  padding: 19px 50px;
+  margin: 25px 39px 30px 38px;
+}
