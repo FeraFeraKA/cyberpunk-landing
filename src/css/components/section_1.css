@@ -1,0 +1,29 @@
+.info_text {
+  padding: 70px 12px;
+}
+
+.info_text h1 {
+  font-family: "Archangelsk", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.bold_blue {
+  color: #52bedc;
+  font-weight: 700;
+}
+
+.info_text p {
+  color: #777777;
+  line-height: 32px;
+}
+
+.info img {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.info img:last-child {
+  margin-bottom: 0;
+}
