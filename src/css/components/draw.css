@@ -1,0 +1,54 @@
+.draw {
+  margin-top: 70px;
+}
+
+.draw img {
+  display: block;
+}
+
+.draw_color {
+  background-color: var(--main-black);
+}
+
+.draw_info img {
+  position: absolute;
+}
+
+.draw_sale {
+  top: 6px;
+  left: 12px;
+}
+
+.draw_consoles {
+  inset: 55px 12px 0px;
+}
+
+.draw_info {
+  position: relative;
+  padding: 0 12px 211px;
+  color: var(--main-white);
+}
+
+.draw_info h2 {
+  font-family: "Archangelsk", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.draw_info p {
+  padding-top: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.draw_input {
+  margin-top: 70px;
+}
+
+.form_input {
+  background-color: var(--main-black);
+}
+
+.form_input input::placeholder {
+  color: var(--main-white);
+}

@@ -1,6 +1,7 @@
 @import "./base/base.css";
 @import "./components/header.css";
-@import "./components/section_1.css";
+@import "./components/info.css";
+@import "./components/draw.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @font-face {
