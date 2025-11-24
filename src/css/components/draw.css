@@ -10,7 +10,7 @@
   background-color: var(--main-black);
 }
 
-.draw_info img {
+.draw_images img {
   position: absolute;
 }
 
@@ -23,10 +23,15 @@
   inset: 55px 12px 0px;
 }
 
-.draw_info {
+.draw_images {
   position: relative;
-  padding: 0 12px 211px;
+  padding-bottom: 211px;
+}
+
+.draw_info {
   color: var(--main-white);
+  padding: 0 12px;
+  margin-bottom: 70px;
 }
 
 .draw_info h2 {
@@ -41,14 +46,52 @@
   line-height: 32px;
 }
 
-.draw_input {
-  margin-top: 70px;
+.form_item {
+  margin: 0 12px 35px;
 }
 
-.form_input {
+.form_item input {
+  border: none;
+  width: 100%;
+  padding: 13px 0;
+  color: var(--main-white);
+  background-color: var(--main-black);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form_item input::placeholder {
+  color: var(--main-white);
   background-color: var(--main-black);
 }
 
-.form_input input::placeholder {
+.form_item input:focus {
+  outline: none;
+}
+
+.form_line {
+  height: 1px;
+  background-color: var(--main-grey);
+}
+
+.form_uploadfile {
+  display: block;
+  margin: 0 12px;
+}
+
+.form_uploadfile input {
+  display: none;
+}
+
+.form_uploadfile label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  border: 2px dashed var(--main-grey);
   color: var(--main-white);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
 }

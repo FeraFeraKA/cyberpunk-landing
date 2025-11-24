@@ -61,7 +61,7 @@
     <section class="draw">
       <img src="/src/img/draw/pixels.svg" alt="" />
       <div class="draw_color">
-        <div class="draw_info">
+        <div class="draw_images">
           <img src="/src/img/draw/sale.svg" alt="" class="draw_sale" />
           <img src="/src/img/draw/consoles.png" alt="" class="draw_consoles" />
         </div>
@@ -78,16 +78,37 @@
             1 февраля. Удачи! ;)
           </p>
         </div>
-        <form action="" method="get" class="draw_input">
-          <div class="form_input">
-            <input type="text" name="name" placeholder="Как тебя зовут?" required />
+        <form action="" method="get" class="draw_form">
+          <div class="form_item">
+            <input
+              type="text"
+              id="text"
+              name="text"
+              autocomplete="off"
+              placeholder="Как тебя зовут?"
+              required
+            />
+            <p class="form_line"></p>
           </div>
-          <div class="form_input">
-            <input type="email" name="email" placeholder="Твой e-mail" required />
+          <div class="form_item">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="off"
+              placeholder="Твой e-mail"
+              required
+            />
+            <p class="form_line"></p>
           </div>
-          <input type="file" name="file" />
-          <input type="submit" value="Отправить" />
-          <div class="form_input">
+          <div class="form_uploadfile">
+            <input type="file" id="file" name="file" />
+            <label for="file">Прикрепить скриншот</label>
+          </div>
+          <div class="form_item">
+            <input type="submit" value="Отправить" />
+          </div>
+          <div class="form_item">
             <input type="checkbox" name="checkbox" />
             <label for="agree">Согласен на обработку персональных данных</label>
           </div>

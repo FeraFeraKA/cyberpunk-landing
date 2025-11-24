@@ -2,11 +2,30 @@
 @import "./components/header.css";
 @import "./components/info.css";
 @import "./components/draw.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
   font-family: "Archangelsk";
   src: url("../fonts/Archangelsk.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
 }
