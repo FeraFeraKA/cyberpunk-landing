@@ -1,0 +1,55 @@
+.yellow_pixels {
+  display: block;
+}
+
+.monitor {
+  background-color: var(--main-yellow);
+  padding: 70px 12px;
+}
+
+.monitor_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.monitor_text img {
+  width: 296px;
+  height: 273px;
+}
+
+.monitor_text h3 {
+  margin-top: 40px;
+  font-family: "Archangelsk";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.monitor_text p {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.monitor_list {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.monitor_list span {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+.monitor_button {
+  display: block;
+  margin: 40px 112px 0 0;
+  padding: 20.5px 50px;
+  color: var(--main-yellow);
+  background-color: var(--main-black);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
