@@ -1,0 +1,53 @@
+.cyberpunk {
+  display: block;
+  width: 320px;
+  height: 198px;
+}
+
+.game {
+  padding: 40px 12px 70px;
+  background-color: var(--main-black);
+  color: var(--main-white);
+}
+
+.game h4 {
+  font-family: "Archangelsk";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.game_complectation {
+  margin-top: 25px;
+}
+
+.game_complectation h5 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.complectation_list {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.complectation_list span {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+.game h6 {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.game_platforms {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 56px;
+  row-gap: 36px;
+}

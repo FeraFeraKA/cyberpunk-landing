@@ -9,13 +9,8 @@
   padding-bottom: 25px;
 }
 
-.bold_blue {
-  color: #52bedc;
-  font-weight: 700;
-}
-
 .info_text p {
-  color: #777777;
+  color: var(--main-grey);
   line-height: 32px;
 }
 
