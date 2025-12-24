@@ -95,3 +95,62 @@
   font-size: 16px;
   font-weight: 300;
 }
+
+.form_submit {
+  margin: 35px 126px 0 12px;
+}
+
+.form_submit input {
+  padding: 20.5px 50px;
+  background-color: var(--main-yellow);
+  color: var(--main-black);
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+}
+
+.form_checkbox {
+  margin: 14px 28px 73px 12px;
+}
+
+.form_checkbox input {
+  display: none;
+}
+
+.form_checkbox label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox_box {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--main-grey);
+  position: relative;
+}
+
+.checkbox_box::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  border: solid var(--main-yellow);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  left: 3px;
+  opacity: 0;
+}
+
+.form_checkbox input:checked + label .checkbox_box::after {
+  opacity: 1;
+}
+
+.checkbox_text {
+  display: inline-block;
+  color: var(--main-white);
+  font-size: 12px;
+  font-weight: 300;
+}
