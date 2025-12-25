@@ -1,3 +1,8 @@
+.bold_blue {
+  color: var(--main-blue);
+  font-weight: 700;
+}
+
 :root {
   --main-black: #000000;
   --main-yellow: #f8f200;

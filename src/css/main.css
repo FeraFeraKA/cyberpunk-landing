@@ -4,6 +4,7 @@
 @import "./components/draw.css";
 @import "./components/hp_monitor.css";
 @import "./components/game.css";
+@import "./components/footer.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
@@ -29,9 +30,4 @@ input,
 textarea,
 select {
   font-family: inherit;
-}
-
-.bold_blue {
-  color: var(--main-blue);
-  font-weight: 700;
 }

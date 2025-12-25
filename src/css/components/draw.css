@@ -98,6 +98,7 @@
 
 .form_submit {
   margin: 35px 126px 0 12px;
+  cursor: pointer;
 }
 
 .form_submit input {
@@ -121,7 +122,6 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  cursor: pointer;
 }
 
 .checkbox_box {
