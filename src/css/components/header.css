@@ -8,7 +8,15 @@
   position: relative;
   margin: 0 12px;
   z-index: 3;
-  padding-top: 20px;
+  padding: 20px 36px 0;
+}
+
+@media (min-width: 1024px) {
+  .header_nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 .header_nav > a {
@@ -16,6 +24,12 @@
   width: 200px;
   height: 50px;
   margin: 0 auto 10px;
+}
+
+@media (min-width: 1024px) {
+  .header_nav > a {
+    margin: 0;
+  }
 }
 
 .nav_links {
@@ -27,6 +41,24 @@
 .nav_links a {
   height: 25px;
   width: 25px;
+}
+
+@media (min-width: 1024px) {
+  .nav_links a {
+    height: 30px;
+    width: 30px;
+    margin-right: 40px;
+  }
+
+  .nav_links a:last-child {
+    margin-right: 0;
+  }
+
+  .nav_links a img {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .header_banner {
@@ -53,6 +85,17 @@
   clip-path: polygon(0% 24%, 15% 0%, 100% 0%, 100% 76%, 85% 100%, 0% 100%);
 }
 
+@media (min-width: 1024px) {
+  .platforms_yellow {
+    left: unset;
+    right: 36px;
+    height: 369px;
+    width: 624px;
+    padding: 70px 70px 173px;
+    clip-path: polygon(0% 14%, 8% 0%, 100% 0%, 100% 86%, 92% 100%, 0% 100%);
+  }
+}
+
 .platforms_yellow::before {
   content: "";
   position: absolute;
@@ -63,6 +106,12 @@
   z-index: -1;
 }
 
+@media (min-width: 1024px) {
+  .platforms_yellow::before {
+    clip-path: polygon(0% 14%, 8% 0%, 100% 0%, 100% 86%, 92% 100%, 0% 100%);
+  }
+}
+
 .platforms_yellow p {
   display: block;
   text-align: center;
@@ -70,6 +119,14 @@
   font-weight: 400;
   font-size: 30px;
   margin: 0 13px;
+}
+
+@media (min-width: 1024px) {
+  .platforms_yellow p {
+    text-align: left;
+    font-size: 62px;
+    margin: 0;
+  }
 }
 
 .platforms_yellow a {
@@ -82,4 +139,11 @@
   text-decoration: none;
   padding: 19px 50px;
   margin: 25px 39px 30px 38px;
+}
+
+@media (min-width: 1024px) {
+  .platforms_yellow a {
+    font-size: 24px;
+    margin: 25px 212px 0 0;
+  }
 }
