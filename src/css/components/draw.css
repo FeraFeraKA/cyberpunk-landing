@@ -103,8 +103,8 @@
 }
 
 .form_submit {
-  margin: 35px 126px 0 12px;
-  cursor: pointer;
+  display: inline-block;
+  margin: 35px 0 0 12px;
 }
 
 .form_submit input {
@@ -114,6 +114,7 @@
   font-size: 16px;
   font-weight: 700;
   border: 0;
+  cursor: pointer;
 }
 
 .form_checkbox {

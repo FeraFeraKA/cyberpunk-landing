@@ -48,8 +48,8 @@
 }
 
 .monitor_button {
-  display: block;
-  margin: 40px 112px 0 0;
+  display: inline-block;
+  margin: 40px 0 0 12px;
   padding: 20.5px 50px;
   color: var(--main-yellow);
   background-color: var(--main-black);
