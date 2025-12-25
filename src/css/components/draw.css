@@ -2,8 +2,10 @@
   margin-top: 70px;
 }
 
-.draw img {
+.draw > img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .draw_color {
@@ -21,17 +23,21 @@
 
 .draw_consoles {
   inset: 55px 12px 0px;
+  width: calc(100% - 24px);
+  object-fit: contain;
 }
 
 .draw_images {
   position: relative;
-  padding-bottom: 211px;
+  aspect-ratio: 16 / 9;
+  max-height: 300px;
 }
 
 .draw_info {
   color: var(--main-white);
   padding: 0 12px;
-  margin-bottom: 70px;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .draw_info h2 {
