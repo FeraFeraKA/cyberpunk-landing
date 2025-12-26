@@ -62,16 +62,30 @@
       <div class="info_images">
         <img src="/src/img/info/img_1.png" srcset="/src/img/info/img_1_laptop.png" alt="img_1" />
         <img src="/src/img/info/img_2.png" srcset="/src/img/info/img_2_laptop.png" alt="img_2" />
-        <img src="/src/img/info/img_3.png" srcset="/src/img/info/img_3_laptop.png" alt="img_3" class="item_3"/>
+        <img
+          src="/src/img/info/img_3.png"
+          srcset="/src/img/info/img_3_laptop.png"
+          alt="img_3"
+          class="item_3"
+        />
       </div>
     </section>
 
     <section class="draw">
-      <img src="/src/img/draw/pixels.svg" alt="" />
+      <picture>
+        <source srcset="/src/img/draw/black_pixels_laptop.svg" media="(min-width: 1024px)" />
+        <img src="/src/img/draw/black_pixels.svg" alt="black_pixels" />
+      </picture>
       <div class="draw_color">
         <div class="draw_images">
-          <img src="/src/img/draw/sale.svg" alt="" class="draw_sale" />
-          <img src="/src/img/draw/consoles.png" alt="" class="draw_consoles" />
+          <picture class="draw_sale">
+            <source srcset="/src/img/draw/sale_laptop.png" media="(min-width: 1024px)" />
+            <img src="/src/img/draw/sale.svg" alt="sale" />
+          </picture>
+          <picture class="draw_consoles">
+            <source srcset="/src/img/draw/consoles_laptop.png" media="(min-width: 1024px)" />
+            <img src="/src/img/draw/consoles.png" alt="consoles" />
+          </picture>
         </div>
         <div class="draw_info">
           <h2>Играй и выигрывай!</h2>
