@@ -1,7 +1,19 @@
-.cyberpunk {
+@media (min-width: 1024px) {
+  .cyberpunk {
+    display: grid;
+    grid-template-columns: 332px 1fr;
+  }
+}
+
+.cyberpunk_image {
   display: block;
   height: auto;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .cyberpunk_image {
+  }
 }
 
 .game {
@@ -10,19 +22,43 @@
   color: var(--main-white);
 }
 
+@media (min-width: 1024px) {
+  .game {
+    padding: 70px 36px 70px 32px;
+  }
+}
+
 .game h4 {
   font-family: "Archangelsk";
   font-size: 30px;
   font-weight: 400;
 }
 
+@media (min-width: 1024px) {
+  .game h4 {
+    font-size: 62px;
+  }
+}
+
 .game_complectation {
   margin-top: 25px;
+}
+
+@media (min-width: 1024px) {
+  .game_complectation {
+  }
 }
 
 .game_complectation h5 {
   margin-bottom: 5px;
   font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .game_complectation h5 {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
 }
 
 .complectation_list {
@@ -31,14 +67,35 @@
   margin-top: 15px;
 }
 
+@media (min-width: 1024px) {
+  .complectation_list img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .complectation_list span {
   display: inline-block;
   margin-left: 18px;
 }
 
+@media (min-width: 1024px) {
+  .complectation_list span {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+
 .game h6 {
   margin-top: 40px;
   font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .game h6 {
+    margin-top: 70px;
+    font-size: 24px;
+  }
 }
 
 .game_platforms {
@@ -50,4 +107,14 @@
   justify-items: center;
   column-gap: 56px;
   row-gap: 36px;
+}
+
+@media (min-width: 1024px) {
+  .game_platforms {
+    margin-top: 25px;
+    max-width: 319px;
+    column-gap: 50px;
+    row-gap: 30px;
+    justify-items: start;
+  }
 }
