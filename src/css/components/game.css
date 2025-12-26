@@ -11,11 +11,6 @@
   width: 100%;
 }
 
-@media (min-width: 1024px) {
-  .cyberpunk_image {
-  }
-}
-
 .game {
   padding: 40px 12px 70px;
   background-color: var(--main-black);
@@ -42,11 +37,6 @@
 
 .game_complectation {
   margin-top: 25px;
-}
-
-@media (min-width: 1024px) {
-  .game_complectation {
-  }
 }
 
 .game_complectation h5 {
