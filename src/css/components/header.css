@@ -20,6 +20,11 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .header_nav {
+  }
+}
+
 .header_nav > a {
   display: block;
   width: 200px;
@@ -94,6 +99,14 @@
     width: 624px;
     padding: 70px 70px 173px;
     clip-path: polygon(0% 14%, 8% 0%, 100% 0%, 100% 86%, 92% 100%, 0% 100%);
+  }
+}
+
+@media (min-width: 1920px) {
+  .platforms_yellow {
+    inset: unset;
+    right: 320px;
+    bottom: 0;
   }
 }
 

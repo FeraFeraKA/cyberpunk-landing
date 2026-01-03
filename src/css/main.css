@@ -37,3 +37,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.bold_blue {
+  color: var(--main-blue);
+  font-weight: 700;
+}
+
+@media (min-width: 1920px) {
+  .container {
+    padding: 0 320px;
+  }
+}
