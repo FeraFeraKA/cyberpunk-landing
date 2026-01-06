@@ -83,71 +83,75 @@
 
     <section class="draw">
       <picture>
+        <source srcset="/src/img/draw/black_pixels_pc.svg" media="(min-width: 1920px)" />
         <source srcset="/src/img/draw/black_pixels_laptop.svg" media="(min-width: 1024px)" />
         <img src="/src/img/draw/black_pixels.svg" alt="black_pixels" />
       </picture>
-      <div class="draw_color">
-        <div class="draw_images">
-          <picture class="draw_sale">
-            <source srcset="/src/img/draw/sale_laptop.png" media="(min-width: 1024px)" />
-            <img src="/src/img/draw/sale.svg" alt="sale" />
-          </picture>
-          <picture class="draw_consoles">
-            <source srcset="/src/img/draw/consoles_laptop.png" media="(min-width: 1024px)" />
-            <img src="/src/img/draw/consoles.png" alt="consoles" />
-          </picture>
+      <div class="container">
+        <div class="draw_color">
+          <div class="draw_images">
+            <picture class="draw_sale">
+              <source srcset="/src/img/draw/sale_laptop.png" media="(min-width: 1024px)" />
+              <img src="/src/img/draw/sale.svg" alt="sale" />
+            </picture>
+            <picture class="draw_consoles">
+              <source srcset="/src/img/draw/consoles_pc.png" media="(min-width: 1920px)" />
+              <source srcset="/src/img/draw/consoles_laptop.png" media="(min-width: 1024px)" />
+              <img src="/src/img/draw/consoles.png" alt="consoles" />
+            </picture>
+          </div>
+          <div class="draw_info">
+            <h2>Играй и выигрывай!</h2>
+            <p>
+              Играй в
+              <span class="bold_blue">Cyberpunk 2077</span>
+              и получи возможность выиграть консоль
+              <span class="bold_blue">Xbox Series X</span>
+              или
+              <span class="bold_blue">Sony PlayStation 5!</span>
+              Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены
+              1 февраля. Удачи!
+            </p>
+          </div>
+          <form action="" form method="post" enctype="multipart/form-data" class="draw_form">
+            <div class="form_item">
+              <input
+                type="text"
+                id="text"
+                name="text"
+                autocomplete="off"
+                placeholder="Как тебя зовут?"
+                required
+              />
+              <p class="form_line"></p>
+            </div>
+            <div class="form_item">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="off"
+                placeholder="Твой e-mail"
+                required
+              />
+              <p class="form_line"></p>
+            </div>
+            <div class="form_uploadfile">
+              <input type="file" id="file" name="file" />
+              <label for="file">Прикрепить скриншот</label>
+            </div>
+            <div class="form_submit">
+              <input type="submit" value="Отправить" />
+            </div>
+            <div class="form_checkbox">
+              <input type="checkbox" id="checkbox" name="checkbox" />
+              <label for="checkbox">
+                <span class="checkbox_box"></span>
+                <span class="checkbox_text">Согласен на обработку персональных данных</span>
+              </label>
+            </div>
+          </form>
         </div>
-        <div class="draw_info">
-          <h2>Играй и выигрывай!</h2>
-          <p>
-            Играй в
-            <span class="bold_blue">Cyberpunk 2077</span>
-            и получи возможность выиграть консоль
-            <span class="bold_blue">Xbox Series X</span>
-            или
-            <span class="bold_blue">Sony PlayStation 5!</span>
-            Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены
-            1 февраля. Удачи!
-          </p>
-        </div>
-        <form action="" form method="post" enctype="multipart/form-data" class="draw_form">
-          <div class="form_item">
-            <input
-              type="text"
-              id="text"
-              name="text"
-              autocomplete="off"
-              placeholder="Как тебя зовут?"
-              required
-            />
-            <p class="form_line"></p>
-          </div>
-          <div class="form_item">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              autocomplete="off"
-              placeholder="Твой e-mail"
-              required
-            />
-            <p class="form_line"></p>
-          </div>
-          <div class="form_uploadfile">
-            <input type="file" id="file" name="file" />
-            <label for="file">Прикрепить скриншот</label>
-          </div>
-          <div class="form_submit">
-            <input type="submit" value="Отправить" />
-          </div>
-          <div class="form_checkbox">
-            <input type="checkbox" id="checkbox" name="checkbox" />
-            <label for="checkbox">
-              <span class="checkbox_box"></span>
-              <span class="checkbox_text">Согласен на обработку персональных данных</span>
-            </label>
-          </div>
-        </form>
       </div>
     </section>
 

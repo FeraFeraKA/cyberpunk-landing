@@ -24,6 +24,18 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .draw_color {
+    padding: 1px 0 0;
+    background-color: unset;
+    position: relative;
+  }
+
+  .draw > .container {
+    background-color: var(--main-black);
+  }
+}
+
 .draw_images picture {
   position: absolute;
 }
@@ -62,8 +74,16 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .draw_consoles {
+    width: 788px;
+    height: 456px;
+    top: auto;
+    bottom: 70px;
+  }
+}
+
 .draw_images {
-  position: relative;
   aspect-ratio: 16/9;
 }
 
@@ -84,6 +104,12 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .draw_info {
+    margin: 70px 0 98px 0;
+  }
+}
+
 .draw_info h2 {
   font-family: "Archangelsk", sans-serif;
   font-weight: 400;
@@ -93,6 +119,12 @@
 @media (min-width: 1024px) {
   .draw_info h2 {
     font-size: 62px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .draw_info h2 {
+    margin-left: 164px;
   }
 }
 
@@ -110,9 +142,24 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .draw_info p {
+    margin-top: 39px;
+    margin-right: 328px;
+    line-height: 34px;
+    font-size: 18px;
+  }
+}
+
 @media (min-width: 1024px) {
   .draw_form {
     margin: 0 528px 0 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .draw_form {
+    margin: 0 820px 0 0;
   }
 }
 
@@ -126,6 +173,12 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .form_item {
+    margin: 0 0 35px;
+  }
+}
+
 .form_item input {
   border: none;
   width: 100%;
@@ -134,6 +187,12 @@
   background-color: var(--main-black);
   font-size: 16px;
   font-weight: 300;
+}
+
+@media (min-width: 1920px) {
+  .form_item input {
+    padding: 0 0 13px;
+  }
 }
 
 .form_item input::placeholder {
