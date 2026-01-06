@@ -5,6 +5,13 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .cyberpunk {
+    grid-template-columns: 944px 1fr;
+    align-items: center;
+  }
+}
+
 .cyberpunk_image {
   display: block;
   height: auto;
@@ -20,6 +27,12 @@
 @media (min-width: 1024px) {
   .game {
     padding: 70px 36px 70px 32px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .game {
+    padding: 70px 320px 70px 32px;
   }
 }
 
