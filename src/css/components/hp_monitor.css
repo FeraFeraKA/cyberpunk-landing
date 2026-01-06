@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 1024px) {
-  .monitor {
+  .monitor > .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
@@ -18,7 +18,13 @@
   }
 }
 
-.monitor > picture {
+@media (min-width: 1920px) {
+  .monitor > .container {
+    padding: 0 0;
+  }
+}
+
+.monitor > .container > picture {
   display: block;
   max-width: 296px;
   max-height: 273px;
@@ -26,9 +32,19 @@
 }
 
 @media (min-width: 1024px) {
-  .monitor > picture {
+  .monitor > .container > picture {
     max-width: 460px;
     max-height: 571px;
+    margin: 0;
+    justify-self: end;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1920px) {
+  .monitor > .container > picture {
+    max-width: 624px;
+    max-height: 536px;
     margin: 0;
     justify-self: end;
     align-self: center;
@@ -38,6 +54,12 @@
 @media (min-width: 1024px) {
   .monitor_info {
     max-width: 460px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .monitor_info {
+    max-width: 624px;
   }
 }
 

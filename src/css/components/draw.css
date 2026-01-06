@@ -84,11 +84,19 @@
 }
 
 .draw_images {
+  position: relative;
   aspect-ratio: 16/9;
 }
 
 @media (min-width: 1024px) {
   .draw_images {
+    aspect-ratio: unset;
+  }
+}
+
+@media (min-width: 1024px) {
+  .draw_images {
+    position: unset;
     aspect-ratio: unset;
   }
 }
