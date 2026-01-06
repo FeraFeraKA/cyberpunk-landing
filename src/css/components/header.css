@@ -1,14 +1,11 @@
 .header {
-  position: relative;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .header_nav {
   position: relative;
-  margin: 0 12px;
+  margin: 20px 12px 0;
   z-index: 3;
-  padding-top: 20px;
 }
 
 @media (min-width: 1024px) {
