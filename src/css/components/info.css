@@ -1,17 +1,5 @@
 .info_text {
-  margin: 70px 12px;
-}
-
-@media (min-width: 1024px) {
-  .info_text {
-    margin: 70px 36px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .info_text {
-    margin: 70px 0;
-  }
+  margin: 70px 0;
 }
 
 .info_text h1 {

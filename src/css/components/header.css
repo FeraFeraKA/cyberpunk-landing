@@ -4,8 +4,8 @@
 
 .header_nav {
   position: relative;
-  margin: 20px 12px 0;
-  z-index: 3;
+  margin-top: 20px;
+  z-index: 1;
 }
 
 @media (min-width: 1024px) {
@@ -13,14 +13,14 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 20px 36px 0;
+    padding-top: 20px;
   }
 }
 
 .header_nav > a {
   display: block;
-  width: 200px;
-  height: 50px;
+  max-width: 200px;
+  max-height: 50px;
   margin: 0 auto 10px;
 }
 
@@ -37,14 +37,14 @@
 }
 
 .nav_links a {
-  height: 25px;
-  width: 25px;
+  max-height: 25px;
+  max-width: 25px;
 }
 
 @media (min-width: 1024px) {
   .nav_links a {
-    height: 30px;
-    width: 30px;
+    max-height: 30px;
+    max-width: 30px;
     margin-right: 40px;
   }
 
@@ -54,8 +54,8 @@
 
   .nav_links a img {
     display: inline-block;
-    height: 30px;
-    width: 30px;
+    max-height: 30px;
+    max-width: 30px;
   }
 }
 
@@ -70,12 +70,13 @@
 
 .platforms_yellow {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
-  height: 206px;
+  min-width: 320px;
+  max-width: 320px;
+  max-height: 206px;
   padding: 30px 0;
-  margin-top: 0;
   background-color: var(--main-black);
   z-index: 1;
   border-top: 1px solid var(--main-black);
@@ -86,9 +87,10 @@
 @media (min-width: 1024px) {
   .platforms_yellow {
     left: unset;
+    transform: unset;
     right: 36px;
-    height: 369px;
-    width: 624px;
+    max-height: 369px;
+    max-width: 624px;
     padding: 70px 70px 173px;
     clip-path: polygon(0% 14%, 8% 0%, 100% 0%, 100% 86%, 92% 100%, 0% 100%);
   }
@@ -96,7 +98,6 @@
 
 @media (min-width: 1920px) {
   .platforms_yellow {
-    inset: unset;
     right: 320px;
     bottom: 0;
   }

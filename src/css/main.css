@@ -43,6 +43,16 @@ img {
   font-weight: 700;
 }
 
+.container {
+  padding: 0 12px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 36px;
+  }
+}
+
 @media (min-width: 1920px) {
   .container {
     padding: 0 320px;
