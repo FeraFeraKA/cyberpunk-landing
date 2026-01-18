@@ -6,7 +6,7 @@
 
 .monitor {
   background-color: var(--main-yellow);
-  padding: 70px 12px;
+  padding: 70px 0;
 }
 
 @media (min-width: 1024px) {
@@ -14,13 +14,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-    padding: 70px 36px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .monitor > .container {
-    padding: 0 0;
   }
 }
 
@@ -128,7 +121,7 @@
 
 .monitor_button {
   display: inline-block;
-  margin: 40px 0 0 12px;
+  margin-top: 40px;
   padding: 20.5px 50px;
   color: var(--main-yellow);
   background-color: var(--main-black);
