@@ -14,26 +14,31 @@
   height: auto;
 }
 
-.draw_color {
+.draw > .container {
   background-color: var(--main-black);
+}
+
+.draw_color {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 @media (min-width: 1024px) {
   .draw_color {
-    padding: 1px 36px 70px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 32px;
   }
 }
 
 @media (min-width: 1920px) {
   .draw_color {
-    padding: 1px 0 0;
-    background-color: unset;
-    position: relative;
+    grid-template-columns: repeat(12, 1fr);
   }
+}
 
-  .draw > .container {
-    background-color: var(--main-black);
-  }
+.draw_images {
+  position: relative;
+  grid-column: 2;
 }
 
 .draw_images picture {
@@ -48,18 +53,19 @@
 
 .draw_sale {
   top: 6px;
-  left: 12px;
 }
 
 @media (min-width: 1024px) {
   .draw_sale {
     top: 15px;
-    left: 0;
+    right: 0;
+    width: 114px;
+    height: 114px;
   }
 }
 
 .draw_consoles {
-  inset: 55px 12px 0px;
+  top: 55px;
   width: calc(100% - 24px);
 }
 
@@ -83,32 +89,15 @@
   }
 }
 
-.draw_images {
-  position: relative;
-  aspect-ratio: 16/9;
-}
-
-@media (min-width: 1024px) {
-  .draw_images {
-    aspect-ratio: unset;
-  }
-}
-
-@media (min-width: 1920px) {
-  .draw_images {
-    position: unset;
-    aspect-ratio: unset;
-  }
-}
-
 .draw_info {
   color: var(--main-white);
-  margin: 25px 12px 50px;
+  margin: 25px 0 50px;
+  grid-column: 1;
 }
 
 @media (min-width: 1024px) {
   .draw_info {
-    margin: 159px 528px 77px 0;
+    margin: 162px 0 77px 0;
   }
 }
 
@@ -159,32 +148,13 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .draw_form {
-    margin: 0 528px 0 0;
-  }
-}
-
-@media (min-width: 1920px) {
-  .draw_form {
-    margin: 0 820px 0 0;
-  }
+.draw_form {
+  margin-bottom: 70px;
+  grid-column: 1;
 }
 
 .form_item {
-  margin: 0 12px 35px;
-}
-
-@media (min-width: 1024px) {
-  .form_item {
-    margin: 0 0 35px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .form_item {
-    margin: 0 0 35px;
-  }
+  margin: 0 0 35px;
 }
 
 .form_item input {
@@ -219,7 +189,6 @@
 
 .form_uploadfile {
   display: block;
-  margin: 0 12px;
 }
 
 .form_uploadfile input {
@@ -241,7 +210,7 @@
 
 .form_submit {
   display: inline-block;
-  margin: 35px 0 0 12px;
+  margin-top: 35px;
 }
 
 .form_submit input {
@@ -255,7 +224,7 @@
 }
 
 .form_checkbox {
-  padding: 14px 28px 73px 12px;
+  margin-top: 14px;
 }
 
 .form_checkbox input {
