@@ -26,13 +26,17 @@
 
 @media (min-width: 1024px) {
   .game {
-    padding: 70px 36px 70px 32px;
+    padding: 70px 0;
   }
 }
 
 @media (min-width: 1920px) {
   .game {
     padding: 70px 320px 70px 32px;
+  }
+
+  .game > .container {
+    padding: 0;
   }
 }
 
